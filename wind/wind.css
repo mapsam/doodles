@@ -1,0 +1,57 @@
+* {
+  -webkit-transition: .3s;
+     -moz-transition: .3s;
+      -ms-transition: .3s;
+       -o-transition: .3s;
+          transition: .3s;
+}
+
+.turbine-tower,
+.turbine-blade {
+  fill:#FFFFFF;
+  stroke:#000000;
+  stroke-width:1.5;
+}
+
+.turbine-blade {
+  -webkit-animation-name: spin;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+}
+
+.turbine-blade.main {
+  -webkit-transform-origin: 44% 58%;
+  -webkit-animation-duration: 9s;
+  -moz-transform-origin: 44% 58%;
+  -moz-animation-duration: 9s;
+  -ms-transform-origin: 44% 58%;
+  -ms-animation-duration: 9s;
+}
+
+.turbine-blade.secondary {
+  -webkit-transform-origin: 44% 58%;
+  -webkit-animation-duration: 14s;
+  -moz-transform-origin: 44% 58%;
+  -moz-animation-duration: 14s;
+  -ms-transform-origin: 44% 58%;
+  -ms-animation-duration: 14s;
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
