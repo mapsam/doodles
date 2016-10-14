@@ -1,4 +1,8 @@
 -
+  name: Squiggly arms
+  file: squiggly.png
+  fragment: squiggly
+-
   name: Global citizen
   file: global-citizen.png
   fragment: global-citizen
