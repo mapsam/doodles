@@ -1,0 +1,58 @@
+---
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>doodles</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  body {
+    margin: 0;
+    padding: 1em;
+    background: #f6f6f6;
+    font-size: 18px;
+    font-family: monospace;
+  }
+  .container {
+    max-width: 500px;
+    margin: 2em auto;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  .doodle {
+    width: 100%;
+    margin-top: 3em;
+  }
+  .doodle p {
+    margin: 0;
+    text-align: right;
+  }
+  .doodle img {
+    width: 100%;
+    height: auto;
+  }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+<h1>Doodles.</h1>
+
+<p>Doodlin oodles of doodles straight from my noodle. Doodle on!</p>
+
+{% for doodle in site.data.doodles %}
+  <div class="doodle">
+    <a href="#{{doodle.fragment}}">
+      <img id="{{doodle.fragment}}" src="doodles/{{doodle.file}}">
+      <p class="doodle-name">{{doodle.name}}</p>
+    </a>
+  </div>
+{% endfor %}
+</div>
+
+</body>
+</html>
