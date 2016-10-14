@@ -1,4 +1,8 @@
 -
+  name: Pink sludge
+  file: toxic.png
+  fragment: pink-sludge
+-
   name: Squiggly arms
   file: squiggly.png
   fragment: squiggly
