@@ -1,4 +1,8 @@
 -
+  name: Good morning, city.
+  file: good-morning-city.png
+  fragment: good-morning-city
+-
   name: Pink sludge
   file: toxic.png
   fragment: pink-sludge
