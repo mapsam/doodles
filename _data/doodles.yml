@@ -1,4 +1,8 @@
 -
+  name: Small sheets
+  file: small-sheets.png
+  fragment: small-sheets
+-
   name: Good morning, city.
   file: good-morning-city.png
   fragment: good-morning-city
