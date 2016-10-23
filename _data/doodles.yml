@@ -1,4 +1,8 @@
 -
+  name: Who?
+  file: who.jpg
+  fragment: who
+-
   name: Small sheets
   file: small-sheets.png
   fragment: small-sheets
