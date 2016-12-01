@@ -1,4 +1,8 @@
 -
+  name: GCC
+  file: gcc.png
+  fragment: gcc
+-
   name: Atlas of Design, Volume 3
   file: aod-v3.png
   fragment: aodv3
