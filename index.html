@@ -56,6 +56,11 @@
     width: 100%;
     height: auto;
   }
+  .doodle.large {
+    margin-left: -25%;
+    width: 150%;
+    margin-right: -25%;
+  }
   </style>
 </head>
 <body>
@@ -67,7 +72,7 @@
 <p>Doodlin oodles of doodles straight from my noodle. Doodle on!</p>
 
 {% for doodle in site.data.doodles %}
-  <div class="doodle">
+  <div class="doodle{% if doodle.class %} {{doodle.class}}{% endif %}">
     <a href="#{{doodle.fragment}}">
       <img id="{{doodle.fragment}}" src="doodles/{{doodle.file}}">
       <p class="doodle-name">{{doodle.name}}</p>
