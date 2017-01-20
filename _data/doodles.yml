@@ -6,7 +6,6 @@
   name: Continental Beach Bash
   file: continental-beach-bash.png
   fragment: cbb
-  class: large
 -
   name: GCC
   file: gcc.png

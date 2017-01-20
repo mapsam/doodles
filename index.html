@@ -33,33 +33,24 @@
     margin: 0;
     padding: 1em;
     background: #f6f6f6;
-    font-size: 18px;
+    font-size: 16px;
     font-family: monospace;
-  }
-  .container {
-    max-width: 500px;
-    margin: 2em auto;
+    text-align: center;
   }
   a {
     text-decoration: none;
     color: black;
   }
   .doodle {
-    width: 100%;
     margin-top: 3em;
   }
   .doodle p {
     margin: 0;
-    text-align: right;
   }
   .doodle img {
-    width: 100%;
+    max-width: 100%;
+    width: auto;
     height: auto;
-  }
-  .doodle.large {
-    margin-left: -25%;
-    width: 150%;
-    margin-right: -25%;
   }
   </style>
 </head>
@@ -72,7 +63,7 @@
 <p>Doodlin oodles of doodles straight from my noodle. Doodle on!</p>
 
 {% for doodle in site.data.doodles %}
-  <div class="doodle{% if doodle.class %} {{doodle.class}}{% endif %}">
+  <div class="doodle">
     <a href="#{{doodle.fragment}}">
       <img id="{{doodle.fragment}}" src="doodles/{{doodle.file}}">
       <p class="doodle-name">{{doodle.name}}</p>
