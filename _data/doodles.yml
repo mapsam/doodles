@@ -1,4 +1,8 @@
 -
+  name: The High Road
+  file: high-road.png
+  fragment: high-road
+-
   name: Continental Beach Bash
   file: continental-beach-bash.png
   fragment: cbb
